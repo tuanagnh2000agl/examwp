@@ -1,0 +1,187 @@
+.u-obligato {
+    color: #f00;
+}
+
+// form
+// text lable
+.u-lable {
+    min-width: 32.1%;
+    font-weight: bold;
+    line-height: 1.7;
+    letter-spacing: 1.3px;
+
+    &.u-lable {
+        &__magrin {
+            margin-top: 4px;
+            @include mobi {
+                margin-top: 0;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+.c-regis {
+    &__groupitem {
+        &.u-padding {
+            padding: 17px 0 19px;
+        }
+    }
+}
+
+.u-input {
+    width: 47.2%;
+    height: 45px;
+    padding: 0 10px;
+    border: unset;
+    background-color: #f2f2f2;
+    @include mobi {
+        max-width: 100%;
+        width: unset;
+    }
+
+    &.u-inputfull {
+        width: 74%;
+        @include mobi {
+            max-width: 100%;
+            width: unset;
+        }
+    }
+
+    &.u-inputfull1 {
+        width: 78.8%;
+        @include mobi {
+            width: calc(100% - 20px);
+        }
+    }
+}
+
+.u-tarea {
+    width: 100%;
+    height: 190px;
+    padding: 10px;
+    border: unset;
+    overflow: hidden;
+    background-color: #f2f2f2;
+    @include mobi {
+        max-width: 100%;
+        width: unset;
+    }
+}
+
+
+textarea {
+    resize: none;
+}
+//css when click
+.c-regis {
+    &__group {
+        .u-message {
+            color: #f00;
+        }
+    }
+}
+
+.u-message {
+    font-size: 1.4rem;
+
+    &.is-marginl {
+        margin-left: 32.1%;
+        display: block;
+        transform: translateY(-14px);
+        @include mobi {
+            margin-left: 0;
+        }
+    }
+
+    &__please {
+        color: #f00;
+        margin-top: 33px;
+        margin-bottom: 18px;
+        display: inline-block;
+        font-size: 1.4rem;
+    }
+}
+
+// custom checkbox
+/* The u-checkmargin */
+.u-checkmargin {
+    position: relative;
+    padding-left: 26px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #000;
+    display: block;
+    @include mobi {
+        font-size: 1.2rem;
+        padding-left: 22px;
+    }
+}
+  
+/* Hide the browser's default checkbox */
+.u-checkmargin input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+/* Create a custom checkbox */
+.u-custom {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background-color: #fff;
+    border: 1px solid #c2c2c2;
+    @include mobi {
+        height: 14px;
+        width: 14px;
+        top: 2px;
+    }
+}
+  
+/* On mouse-over, add a grey background color */
+.u-checkmargin:hover input ~ .u-custom {
+    background-color: #fff;
+}
+  
+/* When the checkbox is checked, add a blue background */
+.u-checkmargin input:checked ~ .u-custom {
+    background-color: #00ada0;
+}
+  
+/* Create the u-custom/indicator (hidden when not checked) */
+.u-custom::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Show the u-custom when checked */
+.u-checkmargin input:checked ~ .u-custom::after {
+    display: block;
+}
+  
+/* Style the u-custom/indicator */
+.u-checkmargin .u-custom::after {
+    left: 4.5px;
+    top: 1px;
+    width: 3px;
+    height: 7px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    transform: rotate(45deg);
+    transform: rotate(45deg);
+    @include mobi {
+        left: 4px;
+        top: 1px;
+        width: 2px;
+        height: 6px;
+    }
+}

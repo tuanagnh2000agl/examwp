@@ -1,0 +1,182 @@
+/*------------------------------------------------------------
+icon
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+// css advertis
+.c-advertis {
+    &__btn {
+        text-align: center;
+        margin: 0 20px;
+    }
+
+    &__link {
+        display: inline-block;
+        position: relative;
+        width: 90%;
+        max-width: 410px;
+        padding: 18px;
+        background-color: #fff;
+        color: #00ada0;
+        font-weight: bold;
+        font-size: 1.6rem;
+        line-height: 1.25;
+        letter-spacing: -0.5px;
+        text-align: center;
+        border: 2px solid #fff;
+        @include mobi {
+            font-size: 1.4rem;
+            max-width: 267px;
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 34%;
+            right: 8px;
+            width: 20px;
+            height: 20px;
+            transform: translateX(-50%);
+            background-image: url("./assets/img/arrow_adver.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            @include mobi {
+                top: 29%;
+                right: 21.9px;
+                width: 15px;
+                height: 15px;
+            }
+        }
+
+        &:hover {
+            border: 2px solid #00ada0;
+            opacity: 1;
+        }
+    }
+}
+
+.u-btn {
+    margin-top: 50px;
+    text-align: center;
+
+    &.u-contact {
+        margin-top: 50px;
+    }
+    @include mobi {
+        margin-top: 35px;
+    }
+
+    button {
+        font-family: "Noto Sans JP", sans-serif;
+    }
+
+    &.u-btn1 {
+        margin-top: 18px;
+        @include mobi {
+            margin-top: 42px;
+        }
+    }
+
+    .u-link {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        max-width: 409px;
+        padding: 20.5px;
+        background-color: #00ada0;
+        box-shadow: 4px 4px #000;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.6rem;
+        line-height: 1.2;
+        font-feature-settings: "palt" 1;
+        text-align: center;
+        transition: all 0.2s linear;
+        cursor: pointer;
+        @include mobi {
+            max-width: 270px;
+            width: 94%;
+            padding: 11px 0 12px;
+            box-shadow: 2px 2px #000;
+            font-size: 1.3rem;
+            line-height: 1.5rem;
+        }
+          
+
+        &.u-border {
+            border: 0;
+            max-width: 450px;
+            transition: all 0.2s linear;
+            @include mobi {
+                width: 94%;
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 33.7%;
+            right: 10px;
+            width: 20px;
+            height: 20px;
+            transform: translateX(-50%);
+            background-image: url("./assets/img/arow_new.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            @include mobi {
+                top: 29.8%;
+                right: 26px;
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        &:hover {
+            transform: translate(4px, 4px);
+            box-shadow: 0 0;
+        }
+    }
+}
+// css button footer
+.c-post {
+    &__link {
+        display: block;
+        margin-bottom: 17px;
+        padding: 12px 0 13px;
+        border: 2px solid #fff;
+        @include mobi {
+            width: 84%;
+            margin: 0 auto 15px;
+            padding: 5px 0;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &:hover {
+            background-color: #fff;
+            color: #00ada0;
+            opacity: 1;
+            transition: all 0.3s linear;
+        }
+    }
+}
+
+.u-widthsize {
+    max-width: 290px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    padding: 3px 0;
+    @include mobi {
+        width: 90%;
+        padding: 7px 0 8px;
+    }
+}
+

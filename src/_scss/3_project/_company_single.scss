@@ -1,0 +1,700 @@
+/*
+    css background about
+*/
+.p-companysingle {
+    font-feature-settings: "palt" 1;
+}
+
+.c-companysingle {
+    background: url("./assets/img/background_company.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .l-container {
+        @include container;
+        min-height: 400px;
+        position: relative;
+        @include mobi {
+            min-height: 300px;
+        }
+    }
+
+    &__about {
+        position: absolute;
+        bottom: 44px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        color: #fefefe;
+        max-width: 600px;
+        width: 100%;
+        @include mobi {
+            top: 50%;
+        }
+
+        &title {
+            font-size: 5rem;
+            line-height: 1;
+            font-family: "Franklin Gothic", sans-serif;
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 0.6px;
+            @include mobi {
+                font-size: 2.8rem;
+                letter-spacing: 0;
+            }
+        }
+
+        &text {
+            font-size: 2.4rem;
+            line-height: 1.5;
+            @include mobi {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+/*
+    css background corporate
+*/
+.c-corporate {
+    padding-bottom: 63px;
+    background: url("./assets/img/background_corporate.jpg") repeat;
+
+    .l-container {
+        @include container;
+        width: 92%;
+    }
+    // corporate
+    &__content {
+        margin-top: 34px;
+    }
+
+    // slider infomation
+    &__info {
+        display: flex;
+        width: 100%;
+        position: relative;
+        font-feature-settings: "palt" 1;
+        @include tab {
+            flex-direction: column;
+            position: unset;
+        }
+    }
+
+    &__slider {
+        width: 58.5%;
+        @include tab {
+            width: 100%;
+        }
+
+        &img {
+            font-size: 1.8rem;
+            color: #fbfbfb;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            span {
+                padding: 3.3% 0 3.2% 17.8px;
+                display: block;
+                width: 100%;
+                line-height: calc(25 / 18);
+                position: absolute;
+                letter-spacing: 0.1px;
+                background: #1cbbb4;
+                bottom: 0;
+            }
+
+        }
+    }
+
+    &__describe {
+        background: #fff;
+        width: calc((530px * 100%) / 1160px);
+        position: absolute;
+        right: 0;
+        top: 20px;
+        box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.35);
+        padding: 21px 10px 37px 30px;
+
+        @include pc1200 {
+            padding: 15px;
+        }
+        @include tab {
+            position: unset;
+            margin-top: 50px;
+            width: 100%;
+        }
+
+        &date {
+            font-size: 1.4rem;
+            letter-spacing: 0.2px;
+        }
+
+        &title {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-block: 4px;
+            @include mobi {
+                font-size: 1.4rem;
+            }
+        }
+
+        &text {
+            font-size: 1.4rem;
+            @include mobi {
+                font-size: 1.1rem;
+            }
+        }
+
+        &about {
+            font-size: 2.4rem;
+            font-weight: bold;
+            color: #00ada0;
+            margin-top: 18px;
+            @include mobi {
+                font-size: 1.2rem;
+            }
+        }
+
+        &cicle {
+            font-size: 1.4rem;
+            background-color: #ccc;
+            border-radius: 22px;
+            padding: 6px 19px;
+            display: inline-block;
+            line-height: 1.4;
+            color: #000;
+            margin-top: 15px;
+            margin-block: 15px 20px;
+            @include mobi {
+                font-size: 1.1rem;
+            }
+        }
+
+        &explain {
+            font-size: 1.5rem;
+            line-height: 2;
+            @include mobi {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+/*
+    css data
+*/
+.c-data {
+    margin-top: 41px;
+
+    .l-container {
+        @include container;
+        width: 92%;
+    }
+
+    &__company {
+        display: flex;
+        width: 100%;
+        border-radius: 10px;
+        @include mobi {
+            flex-direction: column;
+        }
+
+        &title {
+            background: #f8b616;
+            font-weight: bold;
+            font-size: 2rem;
+            color: #fbfbfb;
+            width: calc((190px * 100%) / 1160px);
+            border-radius: 10px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            @include tab {
+                font-size: 1.8rem;
+            }
+            @include mobi {
+                width: 100%;
+                border-radius: 10px;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                padding: 10px 0;
+            }
+        }
+
+        &info {
+            display: flex;
+            flex-direction: column;
+            background: #efefef;
+            width: calc((970px * 100%) / 1160px);
+            border-radius: 10px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            padding: 29px 2px 2px 19px;
+
+            @include pc1200 {
+                padding: 28px 0 0 10px;
+            }
+            @include mobi {
+                width: 100%;
+                border-radius: 0;
+                padding: 10px;
+            }
+        }
+    }
+    // CSS info box
+    .c-data {
+        &__link {
+            display: flex;
+            margin-bottom: 26px;
+            margin-left: 4px;
+            @include mobi {
+                flex-direction: column;
+            }
+
+            &icon {
+                display: inline-block;
+                transform: translate(6px, -3px);
+            }
+
+            &title {
+                font-weight: bold;
+                font-size: 2rem;
+                @include tab {
+                    font-size: 1.8rem;
+                }
+            }
+
+            a {
+                display: inline-flex;
+                align-items: flex-end;
+                margin-left: 88px;
+                letter-spacing: 0.5px;
+                margin-bottom: 2px;
+                color: #54c9c4;
+                font-size: 1.4rem;
+                @include tab {
+                    font-size: 1.3rem;
+                }
+                @include mobi {
+                    margin-left: 0;
+                }
+            }
+        }
+        // 
+        &__details {
+            display: flex;
+            width: 100%;
+            @include mobi {
+                flex-direction: column;
+            }
+        }
+
+        &__left {
+            display: flex;
+            flex-direction: column;
+            width: 45.3%;
+
+            @include pc1200 {
+                width: 51%;
+            }
+            @include tab {
+                width: 60%;
+            }
+            @include mobi {
+                width: 100%;
+            }
+
+            &trength {
+                display: flex;
+                margin-bottom: 10px;
+
+            }
+
+        }
+
+        &__right {
+            display: flex;
+            flex-wrap: wrap;
+            width: 54.7%;
+            justify-content: space-between;
+            @include pc1200 {
+                width: 48%;
+                margin-left: 10px;
+                justify-content: unset;
+            }
+
+            @include tab {
+                flex-direction: column;
+                width: 38%;
+            }
+            @include mobi {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            &trength {
+                display: flex;
+                width: calc((100% / 2) - 20px);
+
+                &:last-child {
+                    display: inline-flex;
+                    transform: translateY(-17px);
+                }
+                @include pc1200 {
+                    width: calc((100% / 2) - 2px);
+
+                    &:last-child {
+                        width: 54%;
+                        display: flex;
+                        transform: unset;
+                    }
+                }
+                @include tab {
+                    margin-bottom: 10px;
+                    width: 100%;
+
+                    &:last-child {
+                        width: 100%;
+                    }
+                }
+              
+            }
+        }
+
+        &__graduates {
+            display: flex;
+            margin-top: 9px;
+            min-height: 40px;
+            width: calc(100% - 18px);
+            margin-bottom: 32px;
+            @include mobi {
+                flex-direction: column;
+            }
+
+            &text {
+                color: #1cbbb4;
+                font-weight: bold;
+                font-size: 1.5rem;
+                background: #e3f8f8;
+                display: flex;
+                margin-top: 1px;
+                margin-left: -1px;
+                align-items: center;
+                justify-content: center;
+                width: calc(( 120px * 100%) / 930px);
+                @include tab {
+                    font-size: 1.3rem;
+                    width: 16%;
+                }
+                @include mobi {
+                    width: 100%;
+                    padding: 8px 0;
+                    line-height: 1.2;
+                }
+            }
+
+            &date {
+                background: #fff;
+                font-weight: bold;
+                font-size: 1.3rem;
+                padding-left: 20px;
+                letter-spacing: 0.2px;
+                display: flex;
+                align-items: center;
+                width: 87.1%;
+                @include tab {
+                    font-size: 1.1rem;
+                }
+                @include mobi {
+                    width: 100%;
+                    padding: 8px 5px;
+                    line-height: 1.2;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+/*
+    css coco
+*/
+.c-coco {
+    margin-block: 101px 136px;
+
+    .l-container {
+        max-width: 780px;
+        width: 92%;
+        margin: 0 auto; 
+    }
+
+    &__company {
+        margin-bottom: 82px;
+    }
+
+    &__dash {
+        margin-bottom: 28px;
+
+        &mark {
+            max-width: 480px;
+            width: 92%;
+            margin: 0 auto;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                object-position: -1px;
+            }
+        }
+
+        &title {
+            font-weight: bold;
+            font-size: 2.6rem;
+            padding: 6px 0 7px;
+            color: #020000;
+            text-align: center;
+
+            &.u-edit {
+                padding: 5px 0 8px;
+            }
+            @include mobi {
+                font-size: 2rem;
+            }
+        }
+
+    }
+
+    &__title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #00ada0;
+        margin-bottom: 5px;
+        line-height: 2;
+        @include mobi {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        line-height: 2;
+        margin-bottom: 36px;
+        @include mobi {
+            font-size: 1.3rem;
+        }
+    }
+
+    // 
+    &__type {
+        margin-top: 40px;
+    }
+
+    &__contai {
+        display: flex;
+        margin-bottom: 30px;
+
+        &content {
+            padding-left: 20px;
+            @include mobi {
+                padding-left: 10px;
+            }
+        }
+
+        &title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #00ada0;
+            line-height: 0.9;
+            margin-bottom: 23px;
+            @include mobi {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+        }
+
+        &text {
+            font-size: 1.4rem;
+            @include mobi {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+/*
+    css raleted post
+*/
+.c-raleted {
+    background: url("./assets/img/bg_company.jpg") repeat;
+    background-size: cover;
+    padding-bottom: 71px;
+
+    .l-container {
+        @include container;
+        width: 92%;
+    }
+
+    &__content {
+        text-align: center;
+        margin-bottom: 4.8%;
+        @include tab {
+            margin-bottom: 30px;
+        }
+
+        &title {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #f8b616;
+            transform: translateY(-24px);
+            display: inline-block;
+            position: relative;
+            @include tab {
+                font-size: 2.6rem;
+                transform: translateY(-18px);
+            }
+            @include mobi {
+                font-size: 2.2rem;
+            }
+    
+            &::before {
+                content: "";
+                background: url("./assets/img/icon_rale.png");
+                width: 40px;
+                height: 35px;
+                position: absolute;
+                top: -3%;
+                left: -40%;
+                
+            }
+
+            &::after {
+                content: "";
+                background: url("./assets/img/icon_raleright.png");
+                width: 32px;
+                height: 28px;
+                position: absolute;
+                bottom: -8%;
+                right: -33%;
+            }
+        }
+
+        &text {
+            font-size: 1.5rem;
+            letter-spacing: 1.6px;
+            @include tab {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        @include mobi {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__dummy {
+        width: calc((100% / 4) - 10px);
+        margin: 0 10px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @include tab {
+            margin: 0 5px;
+        }
+
+        @include mobi {
+            width: calc((100% / 2) - 10px);
+            margin: 0 0 20px;
+        }
+
+        .c-raleted {
+            &__image {
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+
+    }
+
+    &__vb {
+        background: #fff;
+        padding: 9px 18px 25px 9px;
+        @include tab {
+            padding: 9px;
+        }
+        @include mobi {
+            padding: 5px;
+        }
+
+        &title {
+            font-weight: bold;
+            font-size: 1.6rem;
+            @include tab {
+                font-size: 1.4rem;
+            }
+            @include mobi {
+                font-size: 1.3rem;
+            }
+        }
+
+        &text {
+            margin-top: 13px;
+            font-size: 1.4rem;
+            @include tab {
+                font-size: 1.2rem;
+            }
+            @include tab {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+/*
+    this is the css on the side of the company . page
+*/
+.c-list {
+    &__another {
+        text-align: center;
+        font-size: 2.4rem;
+        font-weight: bold;
+        margin-bottom: 56px;
+    }
+
+    &__inheritance {
+        margin-top: 42px;
+        margin-left: -7px;
+    }
+    // add class to be different from company page
+    &__group {
+        &.u-edit {
+            border-bottom: none; 
+        }
+    }
+
+    &__item {
+        &.u-magrin {
+            margin-bottom: 27px;
+        }
+    }
+}
+
+

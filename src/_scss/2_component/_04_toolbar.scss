@@ -1,0 +1,29 @@
+.u-toolbar {
+    padding-block: 26px 34px;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.3rem;
+    font-feature-settings: "palt" 1;
+    @include mobi {
+        font-size: 1rem;
+        padding-block: 15px;
+    }
+
+    &__link {
+        a {
+            padding-bottom: 3px;
+            border-bottom: 1px solid #00ada0;
+            color: #00ada0;
+            margin-right: 2px;
+        }
+    }
+
+    &__label {
+        margin-left: 14px;
+        display: inline-block;
+
+        &::before {
+            content: ">";
+            margin-right: 13px;
+        }
+    }
+}

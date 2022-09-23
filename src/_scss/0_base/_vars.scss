@@ -1,0 +1,17 @@
+//baseWidth
+$base-width: 1920px;
+
+//color common
+@mixin container() {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+@mixin magrin() {
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+@font-face {
+    font-family: "Franklin Gothic", sans-serif;
+    src: url("../../_public/assets/font/Franklin\ Gothic\ Demi\ Regular.ttf");
+}

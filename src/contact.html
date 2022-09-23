@@ -1,0 +1,157 @@
+<%- include('_layouts/layout', { title: 'Contact page' }); -%>
+
+<!-- @meta -->
+<meta name="description" content="Contact page">
+<!-- @@meta -->
+
+<!-- @content -->
+<main class="p-contact">
+    <section class="c-contact">
+        <div class="l-container">
+            <div class="c-contact__about">
+                <h1 class="c-contact__abouttitle">Contact</h1>
+                <p class="c-contact__abouttext">お問い合わせ</p>
+            </div>
+        </div>
+    </section>
+    <div class="c-home">
+        <div class="l-container">
+            <!-- toolbar -->
+            <div class="u-toolbar">
+                <div class="u-toolbar__link">
+                    <a href="index.html">ホーム</a>
+                    <span class="u-toolbar__label">お問い合わせ</span>
+                </div>
+            </div>
+            <!-- toolbar -->
+        </div>
+    </div>
+    <section class="c-regis">
+        <div class="l-container">
+            <div class="c-regis__top">
+                <h2 class="c-regis__title">一般･学生の皆様へ</h2>
+                <p class="c-regis__text">この度は愛媛シゴト図鑑をご覧いただきありがとうございます。<br>
+                    愛媛シゴト図鑑を見て疑問に思ったこと、ご質問等ございましたら下記の問い合わせフォームにて意見をお寄せください 。少し聞きづらいなと思うようなことも遠慮なくご質問ください。愛媛シゴト図鑑は頑張る就活生を応援しています！<br>
+                    個人情報の取扱に関しましては、<a href="#" class="c-regis__textblue">プライバシーポリシー</a>をご確認ください。<br>
+                    <span class="c-regis__textred">※は入力必須です。</span>
+                </p>
+            </div>
+            <!-- from validate -->
+            <span class="u-message__please"></span>
+            <div class="c-regis__form">
+                <form action="./" method="POST" id="is-form">
+                    <!-- Start Name -->
+                    <div class="c-regis__group">
+                        <div class="c-regis__groupitem">  
+                            <label for="fullname" class="u-lable">氏名<span class="u-obligato">※</span></label>
+                            <input id="fullname" name="fullname" type="text" class="u-input">
+                        </div>
+                        <span class="u-message"></span>
+                    </div>
+                    <!-- End Name -->
+                    <!-- Start school company name -->
+                    <div class="c-regis__group">
+                        <div class="c-regis__groupitem">
+                            <label for="company" class="u-lable">会社・学校名</label>
+                            <input id="company" name="company" type="text" class="u-input">
+                        </div>
+                    </div>
+                    <!-- End school company name -->
+                    <!-- Start Address -->
+                    <div class="c-regis__group">
+                        <div class="c-regis__groupitem">
+                            <label for="address" class="u-lable">住所</label>
+                            <input id="address" name="address" type="text" class="u-input u-inputfull">
+                        </div>
+                    </div>
+                    <!-- End Address -->
+                    <!-- Start Phone -->
+                    <!-- Please enter the correct phone number format over 10 numbers 
+                    with the following formats((123) 456-7890, (123)456-7890, 123-456-7890, 123.456.7890, 1234567890, +31636363634, 075-63546725) -->
+                    <div class="c-regis__group">
+                        <div class="c-regis__groupitem">
+                            <label for="phone" class="u-lable">電話番号<span class="u-obligato">※</span></label>
+                            <input id="phone" name="phone" type="text" class="u-input">
+                        </div>
+                        <span class="u-message"></span>
+                    </div>
+                    <!-- End Phone -->
+                    <!-- Start Email -->
+                    <div class="c-regis__group">
+                        <div class="c-regis__groupitem">
+                            <label for="email" class="u-lable">メールアドレス<span class="u-obligato">※</span></label>
+                            <input id="email" name="email" type="text" class="u-input">
+                        </div>
+                        <span class="u-message"></span>
+                    </div>
+                    <!-- End Email -->
+                    <!-- Start how did i know about this site -->
+                    <div class="c-regis__group">
+                        <div class="c-regis__groupitem u-padding">
+                            <label class="u-lable u-lable__magrin" for="check">本サイトを知ったきっかけ</label>
+                            <div class="c-regis__click">
+                                <div class="c-regis__checkbox">
+                                    <label for="search" class="u-checkmargin">検索
+                                        <input type="checkbox" id="search" name="search" class="u-check">
+                                        <span class="u-custom"></span>
+                                    </label>
+                                    <label for="book" class="u-checkmargin">冊子
+                                        <input type="checkbox" id="book" name="book" class="u-check">
+                                        <span class="u-custom"></span>
+                                    </label>
+                                    <label for="internet" class="u-checkmargin">ネット広告
+                                        <input type="checkbox" id="internet" name="internet" class="u-check">
+                                        <span class="u-custom"></span>
+                                    </label>
+                                    <label for="word" class="u-checkmargin">口コミ
+                                        <input type="checkbox" id="word" name="word" class="u-check">
+                                        <span class="u-custom"></span>
+                                    </label>
+                                    <label for="fly" class="u-checkmargin">チラシ
+                                        <input type="checkbox" id="fly" name="fly" class="u-check">
+                                        <span class="u-custom"></span>
+                                    </label>
+                                </div>
+                                <div class="c-regis__checkbox">
+                                    <label for="search1" class="u-checkmargin">検索
+                                        <input type="checkbox" id="search1" name="search1" class="u-check">
+                                        <span class="u-custom"></span>
+                                    </label>
+                                    <input type="text" name="check" id="check" class="u-input u-inputfull1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End how did i know about this site -->
+                    <!-- Start Requested content -->
+                    <div class="c-regis__group">
+                        <div class="c-regis__groupitem">
+                            <label for="content" class="u-lable">お問い合わせ内容<span class="u-obligato">※</span></label>
+                            <textarea class="u-tarea" id="content" cols="20" rows="10"></textarea>
+                        </div>
+                        <span class="u-message"></span>
+                    </div>
+                    <!-- End Requested content -->
+                    <!-- Start Submit content -->
+                    <div class="c-regis__button">
+                        <div class="u-btn u-contact">
+                            <button class="u-link u-border" type="submit">この内容で送信する</button>
+                        </div>
+                    </div>
+                    <!-- End Submit content -->
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- start click back to top -->
+    <div class="u-backtotop">
+        <a href="#">
+            <picture>
+                <source media="(max-width: 767px)" srcset="./assets/img/pagetop_sp.png">
+                <img src="./assets/img/pagetop.png" alt="Image icon back to top">
+            </picture>
+        </a>
+    </div>
+    <!-- start click back to top -->
+</main>
+<!-- @@content -->

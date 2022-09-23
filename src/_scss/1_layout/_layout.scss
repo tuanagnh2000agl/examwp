@@ -1,0 +1,23 @@
+/* layout
+------------------------------------------------------------*/
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 1.4rem;
+    overflow-x: hidden;
+    line-height: 1.5;
+    @include sp {
+        min-width: 320px;
+    }
+}
+
+.is-scroll {
+    overflow: hidden;
+}
+//-------------------------------------------------------
+.l-container {
+    max-width: $base-width;
+    width: 100%;
+    margin: 0 auto;
+}
+//-------------------------------------------------------
+

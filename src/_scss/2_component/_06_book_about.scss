@@ -1,0 +1,103 @@
+.u-card {
+    display: flex;
+    margin-bottom: 96px;
+    @include tab {
+        flex-direction: column;
+        margin-bottom: 50px;
+
+        &.u-cardreverse {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.u-chart {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    @include tab {
+        width: 100%;
+        justify-content: flex-start;
+
+    }
+
+    &.u-reverse {
+        justify-content: flex-start;
+        padding-left: 27px;
+        @include tab {
+            padding-left: 0;
+        }
+    }
+    // width text
+    .u-desc {
+        max-width: 384px;
+        padding-left: 1px;
+        color: #020000;
+        margin-right: 28px;
+        @include tab {
+            margin-right: 0;
+            max-width: 100%;
+        }
+
+        .u-title {
+            font-weight: bold;
+            font-size: 2rem;
+            margin-bottom: 11px;
+            line-height: 1.3;
+            font-feature-settings: "palt" 1;
+            letter-spacing: 0.1px;
+            @include mobi {
+                font-size: 1.6rem;
+            }
+        }
+
+        .u-textdes {
+            margin-top: 15px;
+            font-size: 1.5rem;
+            line-height: 2;
+            letter-spacing: 0.1px;
+            font-weight: 400;
+            font-feature-settings: "palt" 1;
+            @include tab {
+                margin-bottom: 20px;
+            }
+            @include mobi {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+// img
+.u-img {
+    width: 50%;
+
+    @include tab {
+        width: 100%;
+    }
+
+    .u-img1 {
+        min-height: 537px;
+        object-position: -10px;
+        @include tab {
+            min-height: auto;
+            object-position: center;
+        }
+       
+    }
+
+    img {
+        margin-top: 6px;
+        width: 100%;
+        min-height: 483px;
+        object-fit: cover;
+        object-position: 1px;
+        @include tab {
+            min-height: auto;
+        }
+    }
+}

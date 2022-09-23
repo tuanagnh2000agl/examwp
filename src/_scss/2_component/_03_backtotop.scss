@@ -1,0 +1,25 @@
+.u-backtotop {
+    text-align: center;
+
+    a {
+        display: inline-block;
+        width: 100%;
+        padding: 31px 0 29px;
+        @include mobi {
+            padding: 15px 0;
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        img {
+            width: 30px;
+            height: 20px;
+            margin: 0 auto;
+            @include mobi {
+                width: 33px;
+            }
+        } 
+    }
+}

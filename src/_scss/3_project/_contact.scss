@@ -1,0 +1,162 @@
+/*
+    css background about
+*/
+.c-contact {
+    background: url("./assets/img/background_contact.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .l-container {
+        @include container;
+        min-height: 400px;
+        position: relative;
+        @include mobi {
+            min-height: 300px;
+        }
+    }
+
+    &__about {
+        position: absolute;
+        bottom: 44px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        color: #fefefe;
+        font-feature-settings: "palt" 1;
+        @include mobi {
+            top: 50%;
+            transform: translatate(-50%);
+            bottom: unset;
+        }
+
+        &title {
+            font-size: 5rem;
+            line-height: 1;
+            font-family: "Franklin Gothic", sans-serif;
+            text-transform: uppercase;
+            font-weight: 400;
+            @include mobi {
+                font-size: 2.8rem;
+                letter-spacing: 0;
+            }
+        }
+
+        &text {
+            font-size: 2.4rem;
+            line-height: 1.5;
+            @include mobi {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+/*
+    css home
+*/
+.c-home {
+    .l-container {
+        @include container;
+        width: 92%;
+    }
+}
+
+/*
+    css form regis
+*/
+
+.c-regis {
+    @include container;
+    margin-block: 42px 129px;
+    font-feature-settings: "palt" 1;
+    @include mobi {
+        margin-bottom: 50px;
+    }
+
+    .l-container {
+        max-width: 780px;
+        width: 92%;
+        margin: 0 auto;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 25px;
+        font-weight: bold;
+        font-size: 2.4rem;
+
+        @include mobi {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        line-height: 2;
+        letter-spacing: 1.4px;
+        @include mobi {
+            font-size: 1.3rem;
+        }
+
+        &blue {
+            color: #00ada0;
+            font-weight: bold;
+        }
+
+        &red {
+            color: #fd0000;
+            letter-spacing: 1.1px;
+        }
+    }
+
+    // form
+    &__group {
+        border-top: 1px solid #c5c5c5;
+
+        &:nth-child(7) {
+            border-bottom: 1px solid #c5c5c5;
+        }
+
+        &item {
+            display: flex;
+            padding: 19px 0 21px;
+            font-size: 1.6rem;
+            @include mobi {
+                flex-direction: column;
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    &__button {
+        margin-left: -5px;
+        
+    }
+
+    &__click {
+        width: 100%;
+    }
+
+    &__checkbox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include mobi {
+            &:last-child {
+                align-items: flex-start;
+                flex-direction: column;
+
+                .u-checkmargin {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        &:first-child {
+            margin-right: 20px;
+            margin-bottom: 12px;
+            @include mobi {
+                margin-right: 0;
+            }
+        }
+    }
+}

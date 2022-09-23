@@ -1,0 +1,41 @@
+.u-btn {
+    &__data {
+        display: inline-flex;
+        align-items: center;
+        border-radius: 11px;
+        width: 80px;
+        height: 24px;
+        justify-content: center;
+        background: #fff;
+        font-size: 1.4rem;
+        @include tab {
+            font-size: 1.3rem;
+        }
+        @include mobi {
+            font-size: 1.2rem;
+        }
+    
+    }
+}
+
+.u-btn {
+    &__text {
+        font-size: 1.3rem;
+        margin-left: 20px;
+        @include pc1200 {
+            margin-left: 10px;
+        }
+        @include tab {
+            font-size: 1.1rem;
+        }
+    
+        @include mobi {
+            font-size: 1rem;
+        }
+    
+        &.u-edit {
+            letter-spacing: 1px;
+        }
+    }
+    
+}

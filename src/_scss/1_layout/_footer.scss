@@ -1,0 +1,189 @@
+.c-footer {
+    background-color: #00ada0;
+    color: #fff;
+}
+
+.c-post {
+    max-width: 1160px;
+    width: 98%;
+    margin: 0 auto;
+    @include mobi {
+        width: 100%;
+    }
+    // css c-post__wrap
+    &__wrap {
+        display: flex;
+        @include mobi {
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 31px;
+        }
+    }
+
+    &__intro {
+        width: 35%;
+        margin-right: 15px;
+        padding-top: 19px;
+        @include mobi {
+            order: 3;
+            margin-right: 0;
+            width: 100%;
+            padding-top: 34px;
+            text-align: center;
+        }
+
+        &img {
+            max-width: 296px;
+            @include mobi {
+                margin: 0 auto;
+                padding: 0 14px;
+            }
+
+            a {
+                display: block;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+        // css c-post__introdatail
+        &datail {
+            margin-top: 12px;
+            font-feature-settings: "palt" 1;
+            @include mobi {
+                margin-top: 27px;
+            }
+        }
+
+        &title {
+            font-weight: bold;
+            font-size: 1.4rem;
+            line-height: 2;
+            margin-left: -2px;
+
+            span {
+                display: inline-block;
+            }
+            @include mobi {
+                font-size: 1.3rem;
+                line-height: 1.5;
+            }
+        }
+
+        &text {
+            margin-left: -2px;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 1.7;
+            letter-spacing: 0.1px;
+            font-feature-settings: "palt" 1;
+
+            @include mobi {
+                font-size: 1.2rem;
+                margin-left: 11px;
+                line-height: 1.5;
+
+                span {
+                    display: block;
+                    @include mobi {
+                        margin-left: -10px;
+                        letter-spacing: -0.1px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__contact {
+        padding: 16px 51px 3px 18px;
+        border-left: 1px solid #80d6d0;
+        font-weight: 400;
+        font-feature-settings: "palt" 1;
+        @include tab {
+            padding: 16px 10px 3px;
+            border-left: 1px solid #80d6d0;
+
+        }
+        @include mobi {
+            order: 1;
+            text-align: center;
+            width: 100%;
+            padding: 30px 0 20px;
+            border-bottom: #91d6d1 1px solid;
+        }
+
+        &please {
+            font-size: 1.3rem;
+            text-align: center;
+            @include mobi {
+                padding: 0 9px;
+            }
+        }
+
+        &phone {
+            margin-top: 9px;
+            font-size: 2.6rem;
+            line-height: 1;
+            letter-spacing: 0.2px;
+
+            span {
+                font-size: 4.1rem;
+                @include tab {
+                    font-size: 3rem;
+                }
+                @include mobi {
+                    font-size: 1.8rem;
+                }
+            }
+            @include tab {
+                font-size: 1.6rem;
+            }
+            @include mobi {
+                font-size: 1.4rem;
+                margin-top: 18px;
+                text-align: center;
+                letter-spacing: 0;
+            }
+        }
+    }
+
+    &__btn {
+        width: 25.9%;
+        padding-top: 20px;
+        padding-left: 1px;
+        font-weight: bold;
+        font-size: 1.4rem;
+        text-align: center;
+        font-feature-settings: "palt" 1;
+
+        @include mobi {
+            order: 2;
+            font-size: 1.3rem;
+            padding-top: 18.5px;
+            padding-bottom: 21px;
+            width: 100%;
+            border-bottom: #91d6d1 1px solid;
+        }
+    }
+ 
+    // css @
+    &__copy {
+        background-color: #33bdb3;
+        padding: 20px 0 15px;
+        text-align: center;
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: 400;
+        @include mobi {
+            font-size: 1.1rem;
+            padding: 11px 0 13px;
+        }
+    }
+}

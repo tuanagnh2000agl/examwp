@@ -1,0 +1,758 @@
+/*------------------------------------------------------------
+Css mainvisual
+------------------------------------------------------------*/
+.c-mainvisual {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+
+    &__slick {
+        height: 700px;
+        @include sp {
+            height: 374px;
+        }
+    }
+
+    &__slickitem {
+        height: 100%;
+        width: 100%;
+
+        img {
+            height: 700px;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            @include tab {
+                width: 100%;
+                object-fit: cover;
+            }
+            @include sp {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &__content {
+        position: absolute;
+        top: 73.7%;
+        left: 34.2%;
+        transform: translate(-50%, -50%);
+        @include tab {
+            left: 37.2%;
+        }
+        
+        @include sp {
+            transform: translate(0);
+            top: unset;
+            left: 5%;
+            bottom: 27px;
+            text-align: center;
+        }
+    }
+
+    &__img {
+        margin-bottom: 35px;
+        @include sp {
+            margin-bottom: 34px;
+            width: 281px;
+        }
+    }
+
+    &__text {
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 3px 0;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.2);
+        color: #fff;
+        border-radius: 3px;
+        font-feature-settings: "palt" 1;
+      
+        @include mobi {
+            font-size: 1.6rem;
+        }
+        @include sp {
+            padding: 0 16px;
+            display: inline-block;
+        }
+        
+    }
+}
+
+/*------------------------------------------------------------
+Css pickup
+------------------------------------------------------------*/
+.c-pickup {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 101px;
+    background-image: url("./assets/img/pickup-bg.jpg");
+    background-repeat: repeat;
+    @include mobi {
+        padding-bottom: 77px;
+    }
+
+    .l-container {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    // css button pickup
+    &__btn {
+        display: inline-block;
+        width: 100%;
+        max-width: 500px;
+        margin: 50px 0 61px;
+        padding: 10px 0 12px;
+        border: 2px solid #acdeda;
+        border-radius: 3px;
+        color: #fff;
+        text-align: center;
+     
+        @include mobi {
+            margin: 34px 0;
+            max-width: 270px;
+            padding: 10px 0 13px;
+            border: 2px solid #fff;
+        }
+    }
+      
+    &__work {
+        margin-bottom: 3px;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 1.6;
+        letter-spacing: -0.6px;
+     
+        @include mobi {
+            margin-bottom: 1px;
+            letter-spacing: -0.6px;
+            font-size: 1.4rem;
+        }
+    }
+
+    &__title {
+        font-size: 2.6rem;
+        letter-spacing: -2px;
+        font-weight: bold;
+        line-height: 1.3;
+    
+        @include mobi {
+            font-size: 1.6rem;
+            letter-spacing: -1px;
+        }
+    }
+    // css slider
+    &__item {
+        width: 329px !important;
+        margin: 0 7.5px;
+        background-color: #fff;
+        @include mobi {
+            width: 165px !important;
+            height: 215px;
+        }
+    }
+
+    &__link {
+        display: block;
+
+        &:hover {
+            opacity: 0.7;
+            transition: all 0.3s linear;
+        }
+    }
+    
+    &__img {
+        position: relative;
+
+        img {
+            max-width: 100%;
+        }
+    }
+   
+    &__text {
+        position: absolute;
+        right: 0;
+        bottom: -1px;
+        padding: 4px 10px;
+        background-color: #fff;
+        color: #00ada0;
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-feature-settings: "palt" 1;
+        @include mobi {
+            font-size: 1.2rem;
+            padding: 2px 10px 3px;
+        }
+       
+    }
+
+    &__content {
+        min-height: 108px;
+        padding: 9px 14px 9px 9px;
+        text-align: left;
+        font-feature-settings: "palt" 1;
+        @include mobi {
+            padding: 3px 8px 8px 5px;
+        }
+
+        &title {
+            color: #000;
+            font-weight: bold;
+            font-size: 1.6rem;
+            line-height: 1.6;
+            @include mobi {
+                font-size: 1.2rem;
+                line-height: 1.5;
+            }
+        }
+    }
+
+    &__mess {
+        margin-top: 10px;
+        color: #000;
+        font-size: 1.4rem;
+        line-height: 1.4;
+        font-feature-settings: "palt" 1;
+        @include mobi {
+            font-size: 1.1rem;
+        }
+    }
+}  
+
+/*------------------------------------------------------------
+Css company
+------------------------------------------------------------*/
+.c-company {
+    padding-bottom: 80px;
+    background-image: url("./assets/img/background_corporate.jpg");
+    background-repeat: repeat;
+    width: 100%;
+    margin: 0 auto;
+    @include mobi {
+        padding-bottom: 43px;
+        background-image: url("./assets/img/background_corporate_sp.png");
+    }
+
+    .l-container {
+        max-width: 1160px;
+        margin: 0 auto;
+        width: 94%;
+        @include mobi {
+            width: 90%;
+        }
+    }
+    // button
+    &__btn {
+        text-align: center;
+    }
+
+    &__center {
+        display: inline-block;
+        width: 100%;
+        max-width: 500px;
+        margin: 48px 2px 44px 0;
+        padding: 9px 0 11px;
+        border: 2px solid #000;
+        border-radius: 3px;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        @include mobi {
+            max-width: 270px;
+            padding: 10px 0 11px;
+            margin: 34px 0 23px;
+            border: 2px solid #000;
+        }
+    }
+
+    &__work {
+        margin-bottom: 2.2px;
+        color: #00ada0;
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 0.1px;
+        @include mobi {
+            font-size: 1.4rem;
+        }
+    }
+
+    &__title {
+        color: #000;
+        font-weight: bold;
+        font-size: 2.6rem;
+        @include mobi {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__text {
+        color: #000;
+        font-size: 1.4rem;
+        line-height: 1.7;
+        text-align: center;
+        line-height: 1.8;
+        font-weight: 400;
+        margin-bottom: 43px;
+        font-feature-settings: "palt" 1;
+        margin-left: -2px;
+        @include mobi {
+            font-size: 1.4rem;
+            margin-bottom: 23px;
+            margin-left: 0;
+        }
+    }
+
+    @include tab {
+        &__group {
+            text-align: center;
+        }
+    }
+  
+
+    &__item {
+        display: inline-block;
+        width: 48%;
+        margin-bottom: 26px;
+        font-feature-settings: "palt" 1;
+
+        @include tab {
+            width: 100%;
+            max-width: 675px;
+            @include magrin;
+
+        }
+
+        @include sp {
+            width: 290px;
+            margin-bottom: 20px;
+        }
+
+        &:nth-child(even) {
+            margin-left: 30px;
+            @include tab {
+                @include magrin;
+            }
+            @include sp {
+                margin-bottom: 20px;
+            }
+        }
+
+        a {
+            &:hover {
+                opacity: 0.7;
+                transition: all 0.3s linear;
+            }
+        }
+      
+    }
+    
+    // container item
+    &__avt {
+        display: flex;
+        min-height: 235px;
+        position: relative;
+        @include mobi {
+            min-height: 176px;
+        }
+    }
+
+    &__img {
+        max-width: 318px;
+        height: 215px;
+        @include pc1200 {
+            max-width: 52%;
+        }
+        @include mobi {
+            height: unset;
+        }
+        @include sp {
+            max-width: 168px;
+            height: 122px;
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            border: 3px solid #fff;
+            object-position: center;
+            @include sp {
+                height: 125px;
+                border: 2px solid #fff;
+            }
+        }
+    }
+
+    &__content {
+        position: absolute;
+        bottom: 4.3%;
+        right: -1.7%;
+        z-index: 10;
+        width: 100%;
+        max-width: 285px;
+        min-height: 199px;
+        text-align: left;
+        background-color: #fff;
+        padding: 13px 16px 13px 20px;
+        box-shadow: 0 3px 7px rgb(0 0 0 / 35%);
+        @include pc1200 {
+            max-width: 52%;
+            right: 0;
+            bottom: unset;
+            top: 20px;
+        }
+        @include tab {
+            min-height: 100%;
+        }
+        @include mobi {
+            right: 0;
+            padding: 8px 10px 8px 9px;
+            bottom: unset;
+            top: 15px;
+            right: 0 !important;
+        }
+        @include sp {
+            max-width: 165px;
+            min-height: 156px;
+        }
+
+        &title {
+            margin-block: 2.7% 0.4%;
+            font-size: 1.8rem;
+            font-weight: bold;
+            line-height: 1.4;
+            @include mobi {
+                font-size: 1.4rem;
+            }
+        }
+
+        &text {
+            font-size: 1.2rem;
+            font-weight: 400;
+            line-height: 1.8;
+            margin-bottom: 6px;
+            @include mobi {
+                font-size: 1.1rem;
+                line-height: 1.4;
+                margin-bottom: 0;
+            }
+        }
+
+        &about {
+            color: #00ada0;
+            font-size: 1.4rem;
+            font-weight: bold;
+            line-height: 1.8;
+            @include mobi {
+                font-size: 1.2rem;
+                line-height: 1.5;
+            }
+        }
+
+        &cicle {
+            background-color: #ccc;
+            border-radius: 12px;
+            padding: 2px 9px;
+            display: inline-block;
+            font-size: 1.2rem;
+            line-height: 1.4;
+            color: #000;
+            margin-top: 24px;
+            @include mobi {
+                font-size: 1.1rem;
+                padding: 3px 9px;
+                margin-top: 13px;
+            }
+        }
+    }
+
+}
+/*------------------------------------------------------------
+Css new
+------------------------------------------------------------*/
+.c-news {
+    background: url("./assets/img/booknew.png")  no-repeat;
+    background-position: 45.3% 71.2%;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 44px;
+    
+    @include pc1450 {
+        background-position: 40px;
+    }
+    @include tab {
+        background: none;
+    }
+    @include mobi {
+        margin-top: 30px;
+    }
+
+    .l-container {
+        max-width: 1160px;
+        margin: 0 auto;
+        text-align: center;
+        @include tab {
+            max-width: 640px;
+            width: 90%;
+        }
+        @include sp {
+            max-width: 290px;
+        }
+    } 
+    //css title
+    &__lable {
+        margin-bottom: 23px;
+        font-weight: bold;
+        @include mobi {
+            margin-bottom: 27px;
+        }
+    }
+
+    &__work {
+        color: #00ada0;
+        font-size: 2rem;
+        margin-bottom: 1px;
+        font-weight: bold;
+        @include mobi {
+            margin-bottom: 0;
+            font-size: 1.4rem;
+        }
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 2.6rem;
+        letter-spacing: -1.4px;
+        @include mobi {
+            font-size: 1.6rem;
+            letter-spacing: -1px;
+        }
+    }
+    // list menu
+    &__menu {
+        width: 100%;
+    }
+
+    &__list {
+        width: 100%;
+        max-width: 780px;
+        margin: 0 auto;
+    }
+
+    &__item {
+        border-top: 1px solid #ccc;
+
+        &:last-child {
+            border-bottom: 1px solid #ccc;
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        padding: 21px 0 20px;
+        text-align: left;
+        font-weight: 400;
+        @include mobi {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 12px 0 9px;
+        }
+        
+        &date {
+            display: inline-block;
+            margin-right: 37px;
+            color: #781111;
+            font-size: 1.4rem;
+            line-height: 1.4;
+            @include mobi {
+                font-size: 1.2rem;
+                margin-bottom: 5px;
+            }
+        }
+
+        &text {
+            font-weight: 400;
+            color: #000;
+            font-size: 1.6rem;
+            @include mobi {
+                font-size: 1.3rem;
+            }
+        }
+    }
+   
+}
+
+/*------------------------------------------------------------
+css advertis
+------------------------------------------------------------*/
+.c-advertis {
+    background-color: #f8b616;
+    padding: 10px 0;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 120px;
+    @include tab {
+        padding: 0 0 50px;
+        margin-top: 180px;
+    }
+    @include mobi {
+        margin-top: 80px;
+        padding-bottom: 45px;
+    }
+
+    .l-container {
+        max-width: 1416px;
+        width: 92%;
+        margin: 0 auto;
+        @include tab {
+            width: 100%;
+        }
+    }
+
+    &__connect {
+        display: flex;
+        width: 100%;
+        @include tab {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__pc {
+        display: flex;
+    }
+  
+
+    &__img {
+        width: 31%;
+        height: 398px;
+        object-fit: cover;
+        @include tab {
+            width: 100%;
+            height: auto;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        position: relative;
+        width: 38%;
+        text-align: center;
+        @include tab {
+            display: none;
+        }
+    }
+
+    &__text {
+        margin: 200px 20px 46px;
+        font-weight: 500;
+        font-size: 1.7rem;
+        font-weight: 400;
+        line-height: 1.45;
+        text-align: center;
+        font-feature-settings: "palt" 1;
+        // phan nay doi p thanh span coi lai
+        span {
+            display: block;
+        }
+    }
+
+    &__book {
+        position: absolute;
+        top: -75px;
+        left: -52px;
+
+        img {
+            min-width: 640px;
+            object-fit: cover;
+            @include pc1200 {
+                min-width: 530px;
+            }
+        }
+    }
+    // css tab
+    // hidden pc display tab
+    &__tab {
+        display: none;
+        @include tab {
+            display: block;
+            text-align: center;
+        }
+
+        &book {
+            margin-block: -90px 50px;
+            @include mobi {
+                margin-block: -33px 21px;
+            }
+
+            img {
+                max-width: 700px;
+                width: 90%;
+                @include sp {
+                    max-width: 242px;
+                    min-height: 98.5px;
+                }
+            }
+        }
+
+        &text {
+            margin-bottom: 50px;
+
+            span {
+                display: block;
+            }
+            @include mobi {
+                margin-bottom: 22px;
+                font-size: 1.3rem;
+                font-feature-settings: "palt" 1;
+                letter-spacing: -0.1px;
+            }
+        }
+    }
+
+    &__pc {
+        width: 100%;
+        @include tab {
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        @include mobi {
+            margin-bottom: 25px;
+        }
+        @include sp {
+            .c-advertis {
+                &__img {
+                    max-width: 161px;
+                    max-height: 145px;
+                    object-fit: cover;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+
+    &__spbtn {
+        display: none;
+        @include tab {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}

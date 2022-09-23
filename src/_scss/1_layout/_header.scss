@@ -1,0 +1,341 @@
+/* Header
+------------------------------------------------------------*/
+.c-header {
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    font-feature-settings: "palt" 1;
+    @include sp {
+        position: relative;
+    }
+
+    &__container {
+        max-width: 1920px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    // start pc
+    &__pc {
+        max-width: 1160px;
+        width: 100%;
+        margin: 0 auto;
+        @include pc1200 {
+            width: 92%;
+        }
+        @include tab {
+            display: none;
+        }
+    }
+
+    //  text and icon arrow right
+    &__text {
+        text-align: right;
+        color: #fff;
+        
+        &link {
+            display: inline-flex;
+            align-items: center;
+            padding: 16px 1px 15px 0;
+            font-size: 1.4rem;
+            letter-spacing: 0.1px;
+            font-weight: 400;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+
+        img {
+            width: 20px;
+            margin-left: 10px;
+        }
+
+    }
+    // navabar
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+    }
+    // logo header
+    &__logo {
+        display: flex;
+        align-items: center;
+        margin-left: 22px;
+        width: 25%;
+
+        @include mobi {
+            margin-left: 7px;
+            max-width: 165px;
+            width: 90%;
+        }
+
+        a {
+            display: block;
+            width: 100%;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+    // menu navabar
+    &__menu {
+        display: flex;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+
+        li {
+            height: 92px;
+        }
+    }
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        font-size: 1.6rem;
+        font-weight: bold;
+        padding: 0 21px 0 30px;
+        height: 100%;
+        @include pc1200 {
+            padding: 0 13px;
+        }
+
+        &:hover {
+            background-color: #00ada0;
+            color: #fff;
+        }
+    }
+
+    // btn
+    &__btn {
+        display: inline-flex;
+        align-items: center;
+        height: 100%;
+        padding: 0 34.5px;
+        letter-spacing: 1.4px;
+        margin-left: 26px;
+        background-color: #00ada0;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.6rem;
+        @include pc1200 {
+            padding: 0 20px;
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+    // end pc
+    // start tab-sp
+    &__sp {
+        display: none;
+        
+        @include tab {
+            display: block;
+            background-color: #fff;
+            height: 90px;
+        }
+        @include mobi {
+            height: 70px;
+        }
+    }
+
+    &__group {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    &__toggle {
+        display: flex;
+    }
+    
+    &__email {
+        background-color: #00ada0;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 140px;
+        font-size: 1.6rem;
+        font-weight: bold;
+        @include mobi {
+            width: 70px;
+            font-size: 1rem;
+        }
+       
+
+        a {
+            margin: 0 auto;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 60px;
+                height: 50px;
+                @include mobi {
+                    width: 30px;
+                    height: 22px;
+                    margin-bottom: 4px;
+                    margin-top: 2px;
+                }
+            }
+        }
+    }
+
+    &__bar {
+        background-color: #000;
+        color: #fff;
+        width: 140px;
+        font-size: 1.6rem;
+        font-weight: bold;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.7;
+        }
+        @include mobi {
+            font-size: 1rem;
+            width: 70px;
+        }
+
+        img {
+            width: 64px;
+            height: 50px;
+            @include mobi {
+                width: 30px;
+                height: 23px;
+                margin-bottom: 4px;
+                margin-top: 2px;
+            }
+        }
+    }
+
+    &__chart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.7;
+        }
+    }
+    // menu display when click
+    &__menutab {
+        position: fixed;
+        inset: 0;
+        background-color: #00ada0;
+        color: #fff;
+        display: none;
+        font-feature-settings: "palt" 1;
+        height: 100vh;
+        overflow: scroll;
+        font-weight: bold;
+    }
+
+    &__close {
+        display: flex;
+
+        &right {
+            display: inline-block;
+            margin-left: auto;
+            padding: 15px 19px 0;
+
+            &:hover {
+                cursor: pointer;
+                opacity: 0.7;
+            }
+
+            span {
+                font-size: 1rem;
+                display: inline-block;
+                transform: translateX(-3px);
+            }
+
+            img {
+                display: block;
+                width: 23px;
+            }
+        }
+    }
+
+    &__listmenu {
+        font-size: 1.8rem;
+        text-align: center;
+        line-height: 1;
+
+        .u-magrin {
+            margin-bottom: 20px;
+        }
+
+        .u-magrin1 {
+            margin-top: 11px;
+
+            i {
+                margin-right: 12px;
+            }
+        }
+
+        li {
+            margin-bottom: 9px;
+
+            &:nth-child(4) {
+                margin-bottom: 10px;
+            }
+           
+        }
+    }
+
+    &__linktab {
+        padding: 9px 0;
+        display: block;
+
+        &.u-close::before {
+            content: "\f00d";
+            font-weight: 900;
+            margin-right: 12px;
+            font-family: "Font Awesome 5 Free";
+        }
+    }
+
+    &__contact {
+        text-align: center;
+        margin-block: 23px 25px;
+        padding-block: 12px 25px;
+        border-top: 1px solid #dbeeec;
+        border-bottom: 1px solid #dbeeec;
+    }
+
+    &__tel {
+        font-size: 1.8rem;
+        margin-left: -1px;
+
+        span {
+            font-size: 3rem;
+        }
+    }
+
+    // end tab-sp
+    
+}      
+
+/* Main menu
+------------------------------------------------------------*/
